@@ -1,11 +1,11 @@
-baseURL: https://example.docsy.dev
-title: Goldydocs
+baseURL: https://blog.didier-segura.fr
+title: BLOG - didier-segura.fr
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
 # Language settings
 contentDir: content/en
-defaultContentLanguage: en
+defaultContentLanguage: fr
 defaultContentLanguageInSubdir: false
 # Useful when translating.
 enableMissingTranslationPlaceholders: true
@@ -46,27 +46,18 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Goldydocs
+    title: Blog
     params:
       description: A Docsy example site
   # cSpell:disable
-  'no':
-    languageName: Norsk
-    contentDir: content/no
-    title: Gulldoks
+  fr:
+    languageName: French
+    contentDir: content/fr
+    title: Blog
     params:
-      description: Docsy er operativsystem for skyen
+      description: Blog
       time_format_default: 02.01.2006
       time_format_blog: 02.01.2006
-  fa:
-    languageDirection: rtl
-    languageName: "فارسی (Persian)"
-    contentDir: content/fa
-    title: "اسناد گلدی"
-    params:
-      description: "یک نمونه برای پوسته داکسی"
-      time_format_default: 2006.01.02
-      time_format_blog: 2006.01.02
   # cSpell:enable
 
 markup:
@@ -145,8 +136,8 @@ params:
   prism_syntax_highlighting: false
 
   copyright:
-    authors: Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
-    from_year: 2018
+    authors: Blog | didier-segura.fr |
+    from_year: 2025
 
   # User interface configuration
   ui:
@@ -166,7 +157,7 @@ params:
     # If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
     # add "hide_feedback: true" to the page's front matter.
     feedback:
-      enable: true
+      enable: false
       # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
       'yes': >-
         Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
@@ -186,14 +177,6 @@ params:
         url: https://example.org/mail
         icon: fa fa-envelope
         desc: Discussion and help from your fellow users
-      - name: Twitter
-        url: https://example.org/twitter
-        icon: fab fa-twitter
-        desc: Follow us on Twitter to get the latest news!
-      - name: Stack Overflow
-        url: https://example.org/stack
-        icon: fab fa-stack-overflow
-        desc: Practical questions and curated answers
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: GitHub
@@ -218,3 +201,7 @@ module:
   imports:
     - path: github.com/google/docsy
       disable: false
+
+caches:
+  images:
+    dir: :cacheDir/images
